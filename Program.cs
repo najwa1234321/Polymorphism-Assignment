@@ -4,19 +4,20 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Create employee object
-        Employee employee = new Employee()
+        // Create an Employee object and set name values.
+        Employee emp = new Employee()
         {
             FirstName = "Nasim",
             LastName = "Misrabi"
         };
 
-        // Polymorphism: interface reference pointing to Employee object
-        IQuitable quitter = employee;
+        // Polymorphism: Interface variable referring to an Employee object.
+        IQuitable quitter = emp;
 
-        // Call Quit() method using the interface
+        // Calling the Quit() method using the interface reference.
         quitter.Quit();
 
-        Console.ReadLine();
+        Console.ReadLine(); // Pause so user can see output.
     }
 }
+
